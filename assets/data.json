@@ -1,0 +1,16 @@
+{
+    "restaurants": [
+      {
+        "id": 1,
+        "restaurant": "McDonalds",
+        "location": "New York",
+        "price_range": "$$$"
+      },
+      {
+        "restaurant": "",
+        "location": "",
+        "price_range": "$$$",
+        "id": 2
+      }  
+    ]
+  }
