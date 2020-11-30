@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Robot', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
 }
 .header-bg{
     width: 100%;
@@ -49,13 +49,13 @@ position: relative;
 .header {
     display: flex; 
     width: 100%; 
+    justify-content: center;
 }
 .navbar {
-    width: 100%; 
+    width: 90%; 
     height: 3rem; 
     display: flex; 
     align-items: center; 
-
     padding-top: 1rem; 
 }
 .title {
@@ -63,7 +63,7 @@ position: relative;
     padding-bottom: 2rem; 
 }
 .logo {
-   padding-left: 1rem; 
+   padding-left: 3rem; 
 }
 .left {   
     flex: 1;
@@ -72,7 +72,7 @@ position: relative;
  /* background: coral;  */
 }
 .middle {
-    flex: 2; 
+    flex: 1; 
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -85,7 +85,7 @@ position: relative;
     text-decoration: none;
 }
 .right {
-    flex: 3; 
+    flex: 4; 
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -93,6 +93,7 @@ position: relative;
     /* background: green;   */
 }
 .list {
+    margin-left: 12rem; 
     display: flex; 
     justify-content: center;
     width: 100%; 
@@ -107,13 +108,18 @@ position: relative;
     padding: .6rem; 
     text-decoration: none;
     color: #fff; 
-    font-size: .8rem; 
+    font-size: .9rem; 
+    font-style:bold;
 }
 .top-btn {
     padding: .8rem .6rem; 
     background:#49B975; 
     border-radius: 8px;
 }
+.top-btn:hover{
+    border-bottom: 5px solid #075e2a;
+}
+
 .br {
     border-top-left-radius: 4px; 
     border-bottom-left-radius: 4px; 
@@ -145,7 +151,7 @@ position: relative;
     align-items: center;
     padding: 10px;
     background: #fff;
-    color: lightgray;
+    color: gray; 
     min-width: 50px;
     text-align: center;
     
@@ -156,7 +162,7 @@ position: relative;
     
   }
   .icon-right {
-      border-left: 1px gainsboro solid; 
+      border-left: 3px gainsboro solid; 
   }
   
   /* Style the input fields */
@@ -165,7 +171,8 @@ position: relative;
     padding: .8rem; 
     border: none; 
     outline: gainsboro; 
-    color: black; 
+    color: #000; 
+     
   }
   .btn {
       background: #4182C3;
@@ -177,7 +184,151 @@ position: relative;
       border: none; 
       cursor: pointer;
   }
+
+  .btn:hover{
+    border-bottom: 5px solid #74bcff;
+  }
+
 /*   .input-field:focus {
     border: 2px solid dodgerblue;
   }
  */
+
+.for-recruiters-bar {
+    background: #13467aee;
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    height: 3rem; 
+   
+}
+
+.bar-wrapper {
+    width: 54%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+ .list-bar {
+    display: flex; 
+    justify-content: space-between;
+    width: 70%; 
+    list-style:none;
+    color: #fff; 
+ }
+
+.for-recruiters {
+     text-decoration: none;
+     color: #fff; 
+     border: 1px solid #fff; 
+     border-radius: 6px; 
+     padding: .4rem 7rem; 
+     cursor: pointer;
+ }
+
+
+ li a:hover {
+    border-bottom: 1px solid #ffffff;
+ }
+
+
+ /* jobs section */
+.jobs {
+    margin-top: 4rem; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jobs-container {
+    width: 60%;
+    display: flex; 
+    justify-content: center;
+   /*  */ /* background: lightgreen;  */
+}
+.cards {
+    flex: 2; 
+}
+.card {
+    border-top: 1px solid rgb(223, 217, 217); 
+    padding-top: 1rem; 
+    display: flex; 
+    /*  background: coral;  */ 
+    max-height: 12rem; 
+    
+    margin-top: 1rem; 
+}
+.card-title {
+    color: royalblue; 
+    margin-bottom: .8rem; 
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.card-mini-title{
+    margin-bottom: .6rem; 
+    text-decoration: none;
+    color: #000; 
+    text-transform: capitalize;
+
+}
+.text-muted{
+    color: gray; 
+    padding-left: .5rem; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+.date {
+    color: gray; 
+}
+    
+
+.card-text{
+    margin-bottom: 1rem; 
+    text-decoration: none;
+    color: rgb(77, 72, 72); 
+}
+.card-img {
+    flex: 1; 
+    width: 10rem; 
+}
+.card-content {
+    padding: 1rem; 
+    flex: 3; 
+    position: relative;
+}
+.heart-icon {
+    position: absolute; 
+    right: 16px; 
+    bottom: 15px;
+    font-size: 1.8rem;
+    color: gray;  
+    
+}
+
+.test{
+    position: absolute;
+    right: 10px;
+    top: -8px; 
+    height: 60px;
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 1px rgba(90, 89, 89, 0.4), inset -20px -40px 40px 30px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+.test:hover{
+    box-shadow: 0px 0px 10px 1px rgba(179, 179, 179, 0.4), inset -20px -40px 40px 30px rgba(255, 255, 255, 0.4);
+    
+}
+.heart-icon:hover {
+  color:red;
+ 
+}
+.categories {
+    flex: 1; 
+}

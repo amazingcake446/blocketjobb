@@ -13,15 +13,14 @@ class Job{
 
 
      
-     let output = ' ';
+     let output = '';
 
      for (let i = 0; i < loremArray.length; i++) {
         let random = Math.floor(Math.random()*(maxWord - minimumWord)) + minimumWord;
         console.log(random)
-         output += loremArray[random] 
+         output += ' '+ loremArray[random] 
      }
-
-     output = output.split('')
+     output = output.trim().split()[0]
      console.log(output)
 
     }
